@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listunsplashRowModel" type="com.tswanarecipe.app.modules.notificationsreadone.data.model.ListunsplashRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnunsplash"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowunsplashif9tkfive"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageUnsplashIF9TKFive"
+                android:layout_height="@dimen/_31pxh"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="@dimen/_31pxh"
+                android:scaleType="centerCrop" circular="@{true}"
+                imageRes="@{@drawable/img_unsplashif9tk5}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashif9tk5"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumntext"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_weight="0.72" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtText"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{listunsplashRowModel.txtText}"
+                    style="@style/txtPoppinssemibold11_3" tools:text="@string/lbl_bella_throne"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtTextOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{listunsplashRowModel.txtTextOne}"
+                    style="@style/txtPoppinsregular8_1" tools:text="@string/msg_june_12_2020"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@+id/txtTextTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="match_parent"
+            android:text="@{listunsplashRowModel.txtTextTwo}"
+            style="@style/txtPoppinsregular11_6" tools:text="@string/msg_lorem_ipsum_tem"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowone"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/linearThumpsup"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" android:layout_width="0dp"
+                android:orientation="horizontal" style="@style/groupStylebluegray_400cornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.61"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{listunsplashRowModel.txtOne}"
+                    style="@style/txtPoppinsregular8_3" tools:text="@string/lbl2"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_5pxh"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.39"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{listunsplashRowModel.txtTwo}"
+                    style="@style/txtPoppinsregular8_4" tools:text="@string/lbl_9"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearThumpsDown"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_weight="0.5" android:layout_width="0dp"
+                android:orientation="horizontal" style="@style/groupStyleteal_50cornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtThree"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.62"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{listunsplashRowModel.txtThree}"
+                    style="@style/txtPoppinsregular8_3" tools:text="@string/lbl3"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTwoOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_6pxh"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.38"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{listunsplashRowModel.txtTwoOne}"
+                    style="@style/txtPoppinsregular8_4" tools:text="@string/lbl_22"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
