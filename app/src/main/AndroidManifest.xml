@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.tswanarecipe.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.tswanarecipe.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <activity
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" android:name="com.facebook.FacebookActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tswanarecipe.app.modules.recipeingridentmore.ui.RecipeIngridentMoreActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.search.ui.SearchActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.homenavigation.ui.HomeNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.savedrecipe.ui.SavedRecipeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.searchresult.ui.SearchResultActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.recipeingridentraterecipeone.ui.RecipeIngridentRateRecipeOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.editprofile.ui.EditProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.notificationsall.ui.NotificationsAllActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.tswanarecipe.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tswanarecipe.app.modules.notificationsreadone.ui.NotificationsReadOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.notificationsread.ui.NotificationsReadActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.signin.ui.SignInActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.settings.ui.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.profile.ui.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.recipeingrident.ui.RecipeIngridentActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.homecontainer.ui.HomeContainerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.filter.ui.FilterActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.recipeingridentraterecipe.ui.RecipeIngridentRateRecipeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.recipeprocedure.ui.RecipeProcedureActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tswanarecipe.app.modules.notificationsunread.ui.NotificationsUnreadActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

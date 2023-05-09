@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cards2RowModel" type="com.tswanarecipe.app.modules.homenavigation.data.model.Cards2RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameFoodPhoto"
+        android:layout_height="wrap_content" android:layout_width="@dimen/_150pxh">
+        <LinearLayout android:id="@+id/linearColumnmagwinyaandse"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylebluegray_100_87cornerRadius">
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtMagwinyaandSe"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_65pxv"
+                android:layout_width="match_parent"
+                android:text="@{cards2RowModel.txtMagwinyaandSe}"
+                style="@style/txtPoppinssemibold14" tools:text="@string/msg_magwinya_and_se"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowtime"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearTime"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="0.82"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTime"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{cards2RowModel.txtTime}"
+                        style="@style/txtPoppinsregular11" tools:text="@string/lbl_time"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTimeOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{cards2RowModel.txtTimeOne}"
+                        style="@style/txtPoppinssemibold11" tools:text="@string/lbl_120_mins"/>
+                </LinearLayout>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_white_a700_radius_12"
+                    android:id="@+id/btnComputer"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="@dimen/_24pxh"
+                    android:paddingHorizontal="@dimen/_5pxh"
+                    android:paddingVertical="@dimen/_5pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_computer" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageRP"
+            android:layout_gravity="top|center"
+            android:layout_height="@dimen/_110pxh"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_width="@dimen/_109pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_55pxh}"
+            imageRes="@{@drawable/img_maemuh5hj8qv2}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_maemuh5hj8qv2"/>
+        <LinearLayout android:id="@+id/linearRating"
+            android:layout_gravity="top|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal" style="@style/groupStyleorange_100cornerRadius">
+            <ImageView android:id="@+id/imageStar"
+                android:layout_height="@dimen/_8pxh"
+                android:layout_marginBottom="@dimen/_7pxv"
+                android:layout_marginStart="@dimen/_7pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="@dimen/_9pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_star"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_star"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFortyFive"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_4pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_weight="0.64" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{cards2RowModel.txtFortyFive}"
+                style="@style/txtPoppinsregular11_1" tools:text="@string/lbl_4_5"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

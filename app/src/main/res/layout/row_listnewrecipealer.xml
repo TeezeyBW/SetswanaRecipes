@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listnewrecipealerRowModel" type="com.tswanarecipe.app.modules.notificationsall.data.model.ListnewrecipealerRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRownewrecipealer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylebluegray_100_75cornerRadius">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnnewrecipealer"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_weight="0.9" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtNewRecipeAler"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listnewrecipealerRowModel.txtNewRecipeAler}"
+                style="@style/txtPoppinssemibold11_3" tools:text="@string/msg_new_recipe_aler"/>
+            <TextView android:id="@+id/txtLabelOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent"
+                android:text="@{listnewrecipealerRowModel.txtLabelOne}"
+                style="@style/txtPoppinsregular11" tools:text="@string/msg_lorem_ipsum_tem3"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtTime"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listnewrecipealerRowModel.txtTime}"
+                style="@style/txtPoppinsregular7" tools:text="@string/lbl_10_mins_ago"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearIconTransantio"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_54pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_weight="0.1" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStyleorange_2">
+            <View
+                android:background="@drawable/rectangle_bg_orange_500_border_white_a700_radius_2_5"
+                android:id="@+id/viewEllipseTwo"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_5pxh"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_22pxh"
+                android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_5pxh"/>
+            <ImageView android:id="@+id/imageFile"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_13pxh"
+                android:layout_marginBottom="@dimen/_7pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_7pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="@dimen/_12pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_file"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_file"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

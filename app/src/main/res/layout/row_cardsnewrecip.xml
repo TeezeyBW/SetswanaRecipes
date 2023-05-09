@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cardsnewrecipRowModel" type="com.tswanarecipe.app.modules.homenavigation.data.model.CardsnewrecipRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameCard"
+        android:layout_height="wrap_content" android:layout_width="@dimen/_251pxh">
+        <LinearLayout android:id="@+id/linearColumnpapandbraai"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPapandBraai"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{cardsnewrecipRowModel.txtPapandBraai}"
+                style="@style/txtPoppinssemibold14" tools:text="@string/lbl_pap_and_braai"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRating"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageStarTwo1"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_width="@dimen/_10pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_star"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_star"/>
+                <ImageView android:id="@+id/imageStarOne"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_width="@dimen/_10pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_star"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_star"/>
+                <ImageView android:id="@+id/imageStarTwo2"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_width="@dimen/_10pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_star"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_star"/>
+                <ImageView android:id="@+id/imageStarThree"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_width="@dimen/_10pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_star"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_star"/>
+                <ImageView android:id="@+id/imageStarFour"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_width="@dimen/_10pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_star"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_star"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowunsplashij24uq"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_6pxh"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageUnsplashIj24Uq"
+                    android:layout_height="@dimen/_25pxh"
+                    android:layout_width="@dimen/_25pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_unsplashij24uq}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashij24uq"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtNamelabel"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_weight="0.52"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{cardsnewrecipRowModel.txtNamelabel}"
+                    style="@style/txtPoppinsregular11" tools:text="@string/lbl_by_james_milner"/>
+                <ImageView android:id="@+id/imageClock"
+                    android:layout_height="@dimen/_15pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_48pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="@dimen/_13pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_clock"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_clock"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTimeTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_weight="0.26"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{cardsnewrecipRowModel.txtTimeTwo}"
+                    style="@style/txtPoppinsregular11" tools:text="@string/lbl_50_mins"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageRecipePicture"
+            android:layout_gravity="top|end"
+            android:layout_height="@dimen/_86pxh"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="@dimen/_79pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_43pxh}"
+            imageRes="@{@drawable/img_maemuh5hj8qv2_86x79}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_maemuh5hj8qv2_86x79"/>
+    </FrameLayout>
+</layout>

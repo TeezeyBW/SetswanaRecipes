@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listnewrecipealerTwo1RowModel" type="com.tswanarecipe.app.modules.notificationsread.data.model.ListnewrecipealerTwo1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRownewrecipealerTwo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylebluegray_100_75cornerRadius">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnnewrecipealerTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_weight="0.9" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtNewRecipeAlerTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listnewrecipealerTwo1RowModel.txtNewRecipeAlerTwo}"
+                style="@style/txtPoppinssemibold11_3" tools:text="@string/msg_new_recipe_aler"/>
+            <TextView android:id="@+id/txtLabelThree"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent"
+                android:text="@{listnewrecipealerTwo1RowModel.txtLabelThree}"
+                style="@style/txtPoppinsregular11" tools:text="@string/msg_lorem_ipsum_tem3"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTimeThree"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listnewrecipealerTwo1RowModel.txtTimeThree}"
+                style="@style/txtPoppinsregular7" tools:text="@string/lbl_10_mins_ago"/>
+        </LinearLayout>
+        <ImageButton
+            android:background="@drawable/rectangle_bg_orange_100_radius_10"
+            android:id="@+id/btnFileTwo"
+            android:layout_height="@dimen/_28pxh"
+            android:layout_marginBottom="@dimen/_54pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_28pxh"
+            android:paddingHorizontal="@dimen/_7pxh"
+            android:paddingVertical="@dimen/_7pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_file" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</layout>

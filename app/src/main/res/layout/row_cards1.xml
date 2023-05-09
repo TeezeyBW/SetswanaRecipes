@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <FrameLayout android:id="@+id/frameCard"
+        android:layout_height="wrap_content" android:layout_width="@dimen/_150pxh">
+        <ImageView android:id="@+id/imageRecipePicture"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_150pxh"
+            android:layout_width="@dimen/_150pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_10pxh}"
+            imageRes="@{@drawable/img_rectangle646_3}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle646_3"/>
+        <LinearLayout android:id="@+id/linearColumnstar"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRating"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_103pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal" style="@style/groupStyleorange_1">
+                <ImageView android:id="@+id/imageStar"
+                    android:layout_height="@dimen/_7pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="@dimen/_7pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_star"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_star"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFortySeven"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_7pxh"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@string/lbl_4_7"
+                    style="@style/txtPoppinsregular8" tools:text="@string/lbl_4_7"/>
+            </LinearLayout>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtFoodtitle"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_64pxv"
+                android:layout_width="match_parent"
+                android:text="@string/msg_bogobe_jwa_ting"
+                style="@style/txtPoppinssemibold11_1" tools:text="@string/msg_bogobe_jwa_ting"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtCreator"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginEnd="@dimen/_109pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_by_tetlo"
+                style="@style/txtPoppinsregular8_1" tools:text="@string/lbl_by_tetlo"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
